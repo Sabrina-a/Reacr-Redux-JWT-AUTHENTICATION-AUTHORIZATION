@@ -1,13 +1,84 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.link{
+  text-decoration: none;
+  color: #fff;
+}
+.link .btn:hover{
+background-color: transparent;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 2em;
+    font-weight: bolder;
+    color: #1b4332;
+}
+.form{
+  width: 40%;
+  margin: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form .inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1em;
+}
+.form .inputs input{
+  height: 3.3em;
+  border: 1.5px solid #2d6a4f;
+  border-radius: 9px;
+  padding: 0px 1em;
+  margin-block: 1em;
+}
+.form .inputs input::placeholder{
+  color: #5c677d;
+}
+.form .inputs input[type="submit"]{ 
+
+  color: #081c15;
+  font-size: 20px;
+  font-weight: 300;
+  height: 2.1em;
+cursor: pointer;
+}
+.form .inputs input[type="submit"]:hover{
+  color: #fff;
+  background-color: rgb(45, 106, 79);
+}
+.form .inputs p{
+color: #cb0808;
+}
+.blog{
+  width: 50em;
+  height: 10em;
+  border-bottom: 1px solid #6d6875;
+  margin: auto;
+}
+.blog textarea{
+  display: block;
+  margin: auto;
+  border: 1px solid rgb(45, 106, 79) ;
+  border-radius: .5em;
+  padding: 1em;
+}
+.blog .btns{
+display: flex;
+justify-content: space-evenly;
+padding: .7em;
+}
+.blog .btns input[type='button']{
+  padding: .5em .8em;
+  cursor: pointer;
+  background-color: rgb(45, 106, 79);
+  border: none;
+  border-radius: .5em;
+  color: #fff;
 }
